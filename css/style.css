@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Calculator;
+    src: url(../font/digital-7.ttf);
+}
+
+body{
+    background-image: linear-gradient(45deg, black, rgb(0, 149, 160));
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 900;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 2px;
+    border: none;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    transition: 0.2s;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    transition: 0.2s;
+}
+
+#result_button{
+    height: 108px; 
+    background: green;
+    transition: 0.2s;
+}
+#result_button:hover{
+    background: rgb(0, 48, 0);
+    transition: 0.2s;
+}
+
+#clear_button{
+    background: red;
+    transition: 0.2s;
+}
+#clear_button:hover{
+    background: rgb(59, 0, 0);
+    transition: 0.2s;
+}
+
+#container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+#display_calculator{
+    background-color: rgb(36, 36, 36);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+#inputs{
+    width: 15vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgb(166, 185, 0);
+    font-family: Calculator;
+    box-shadow: 0 0 20px black;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+#input_operationUP{
+    height: 15px;
+    margin: 0;
+    padding-top: 5px;
+    padding-right: 10px;
+    text-align: end;
+    font-size: 20px;
+}
+#input_operationDOWN{
+    height: 30px;
+    text-align: end; 
+    margin: 0; 
+    padding: 7px;
+    font-size: 30px;
+}
+
+#container_calculator{
+    padding: 27px;
+}
+
